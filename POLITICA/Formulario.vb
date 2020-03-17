@@ -245,6 +245,25 @@ Public Class Formulario
                     txtSector.Text = Cambiar(txtSector.Text)
                 End If
 
+                Dim Idprov, IdMun, idDist As Integer
+
+                If cmbIdProvincia.Text = "" Then
+                    Idprov = 0
+                Else
+                    Idprov = cmbIdProvincia.Text
+                End If
+                If cmbIdMunicipio.Text = "" Then
+                    IdMun = 0
+                Else
+                    IdMun = cmbIdMunicipio.Text
+                End If
+                If cmbIdDistrito.Text = "" Then
+                    idDist = 0
+                Else
+                    idDist = cmbIdDistrito.Text
+                End If
+
+
                 Dim cmd As OleDbCommand = New OleDbCommand("UPDATE afiliados SET id_movimiento =" & cmbIdMovimiento.Text _
                                                             & ",nivel ='" & cmbNivel.Text & "',nombre ='" & txtnombre.Text _
                                                             & "',cedula ='" & mtbcedula.Text & "',telefono ='" & mtbtelefono.Text _
@@ -254,9 +273,9 @@ Public Class Formulario
                                                             & "',facebook ='" & txtfacebook.Text & "',twitter ='" & txttwitter.Text & "',instagram ='" & txtinstagram.Text _
                                                             & "',estado ='" & cmbestado.Text & "',nota ='" & rtbnota.Text _
                                                             & "',telefono_creador ='" & txtTelCreador.Text & "',mail_creador ='" & txtCorreosCreador.Text _
-                                                            & "',id_provincia =" & cmbIdProvincia.Text & ",descripcion_provincia ='" & cmbProvincia.Text _
-                                                            & "',id_municipio =" & cmbIdMunicipio.Text & ",descripcion_municipio ='" & cmbMunicipio.Text _
-                                                            & "',id_distrito_municipal =" & cmbIdDistrito.Text & ",descripcion_distrito_municipal ='" & cmbDistrito.Text _
+                                                            & "',id_provincia =" & Idprov & ",descripcion_provincia ='" & cmbProvincia.Text _
+                                                            & "',id_municipio =" & IdMun & ",descripcion_municipio ='" & cmbMunicipio.Text _
+                                                            & "',id_distrito_municipal =" & idDist & ",descripcion_distrito_municipal ='" & cmbDistrito.Text _
                                                             & "',codigo_circunscripcion ='" & txtCircuncripcion.Text & "',codigo_recinto ='" & txtCodRecinto.Text _
                                                             & "',colegio ='" & txtColegio.Text & "',descripcion_recinto ='" & txtRecinto.Text _
                                                             & "',direccion_recinto ='" & txtDirRecinto.Text & "',descripcion_sector ='" & txtSector.Text _
@@ -295,6 +314,24 @@ Public Class Formulario
 
             Else
 
+                Dim Idprov, IdMun, idDist As Integer
+
+                If cmbIdProvincia.Text = "" Then
+                    Idprov = 0
+                Else
+                    Idprov = cmbIdProvincia.Text
+                End If
+                If cmbIdMunicipio.Text = "" Then
+                    IdMun = 0
+                Else
+                    IdMun = cmbIdMunicipio.Text
+                End If
+                If cmbIdDistrito.Text = "" Then
+                    idDist = 0
+                Else
+                    idDist = cmbIdDistrito.Text
+                End If
+
                 Dim cmd As OleDbCommand = New OleDbCommand("INSERT INTO afiliados (id_movimiento,nivel,nombre,cedula,telefono,correo,
                                                             celular,cargo,nucleo,coordinador,vehiculo,facebook,twitter,instagram,estado,nota,telefono_creador,
                                                             mail_creador,id_provincia,descripcion_provincia,id_municipio,descripcion_municipio,
@@ -305,8 +342,8 @@ Public Class Formulario
                                                             '" & txtcoordinador.Text & "','" & cmbvehiculo.Text & "','" & txtfacebook.Text & "','" & txttwitter.Text & "',
                                                             '" & txtinstagram.Text & "','" & cmbestado.Text & "','" & rtbnota.Text & "',
                                                             '" & txtTelCreador.Text & "','" & txtCorreosCreador.Text & "',
-                                                            " & cmbIdProvincia.Text & ",'" & cmbProvincia.Text & "'," & cmbIdMunicipio.Text & ",'" & cmbMunicipio.Text & "',
-                                                            " & cmbIdDistrito.Text & ",'" & cmbDistrito.Text & "','" & txtCircuncripcion.Text & "','" & txtCodRecinto.Text & "',
+                                                            " & Idprov & ",'" & cmbProvincia.Text & "'," & IdMun & ",'" & cmbMunicipio.Text & "',
+                                                            " & idDist & ",'" & cmbDistrito.Text & "','" & txtCircuncripcion.Text & "','" & txtCodRecinto.Text & "',
                                                             '" & txtColegio.Text & "','" & txtRecinto.Text & "','" & txtDirRecinto.Text & "','" & txtSector.Text & "','" & cmbPartido.Text & "')")
                 cmd.Connection = Conexion.DB.Cnn
                 cmd.ExecuteNonQuery()
