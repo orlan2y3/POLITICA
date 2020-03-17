@@ -126,11 +126,11 @@ Partial Class Entrada
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Purple
-        Me.Label4.Location = New System.Drawing.Point(422, 8)
+        Me.Label4.Location = New System.Drawing.Point(400, 8)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(92, 23)
+        Me.Label4.Size = New System.Drawing.Size(160, 23)
         Me.Label4.TabIndex = 24
-        Me.Label4.Text = "H O M D A"
+        Me.Label4.Text = "TAXEROS CON LUIS"
         '
         'Entrada
         '

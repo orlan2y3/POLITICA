@@ -28,6 +28,7 @@ Partial Class Formulario
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.rdbcedula = New System.Windows.Forms.RadioButton()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
+        Me.btbuscar = New System.Windows.Forms.Button()
         Me.rdbnombre = New System.Windows.Forms.RadioButton()
         Me.txtcodigo = New System.Windows.Forms.TextBox()
         Me.dgvformulario = New System.Windows.Forms.DataGridView()
@@ -35,9 +36,9 @@ Partial Class Formulario
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.cmbestado = New System.Windows.Forms.ComboBox()
@@ -109,8 +110,7 @@ Partial Class Formulario
         Me.bteliminar = New System.Windows.Forms.Button()
         Me.btsalir = New System.Windows.Forms.Button()
         Me.btinsertar = New System.Windows.Forms.Button()
-        Me.btbuscar = New System.Windows.Forms.Button()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvformulario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -173,6 +173,19 @@ Partial Class Formulario
         Me.txtbuscar.Name = "txtbuscar"
         Me.txtbuscar.Size = New System.Drawing.Size(132, 21)
         Me.txtbuscar.TabIndex = 0
+        '
+        'btbuscar
+        '
+        Me.btbuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btbuscar.Image = CType(resources.GetObject("btbuscar.Image"), System.Drawing.Image)
+        Me.btbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btbuscar.Location = New System.Drawing.Point(290, 7)
+        Me.btbuscar.Name = "btbuscar"
+        Me.btbuscar.Size = New System.Drawing.Size(92, 45)
+        Me.btbuscar.TabIndex = 2
+        Me.btbuscar.Text = "Buscar"
+        Me.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btbuscar.UseVisualStyleBackColor = True
         '
         'rdbnombre
         '
@@ -248,6 +261,16 @@ Partial Class Formulario
         Me.GroupBox2.TabIndex = 51
         Me.GroupBox2.TabStop = False
         '
+        'LinkLabel6
+        '
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.Location = New System.Drawing.Point(4, 143)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(79, 15)
+        Me.LinkLabel6.TabIndex = 5
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Por Provincia"
+        '
         'LinkLabel5
         '
         Me.LinkLabel5.AutoSize = True
@@ -267,18 +290,6 @@ Partial Class Formulario
         Me.LinkLabel2.TabIndex = 3
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "General Provincias"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Red
-        Me.Label14.Location = New System.Drawing.Point(574, 732)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(572, 22)
-        Me.Label14.TabIndex = 53
-        Me.Label14.Text = "Desarrollado para HOMDA por: Orlando Reynoso y Arcadio Solano"
-        Me.Label14.Visible = False
         '
         'LinkLabel4
         '
@@ -374,7 +385,7 @@ Partial Class Formulario
         '
         Me.cmbNivel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbNivel.FormattingEnabled = True
-        Me.cmbNivel.Items.AddRange(New Object() {"Multiplicador", "Coordinador"})
+        Me.cmbNivel.Items.AddRange(New Object() {"Multiplicador", "Coordinador", "Miembro"})
         Me.cmbNivel.Location = New System.Drawing.Point(694, 8)
         Me.cmbNivel.Name = "cmbNivel"
         Me.cmbNivel.Size = New System.Drawing.Size(150, 24)
@@ -992,28 +1003,17 @@ Partial Class Formulario
         Me.btinsertar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btinsertar.UseVisualStyleBackColor = True
         '
-        'btbuscar
+        'Label14
         '
-        Me.btbuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btbuscar.Image = CType(resources.GetObject("btbuscar.Image"), System.Drawing.Image)
-        Me.btbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btbuscar.Location = New System.Drawing.Point(290, 7)
-        Me.btbuscar.Name = "btbuscar"
-        Me.btbuscar.Size = New System.Drawing.Size(92, 45)
-        Me.btbuscar.TabIndex = 2
-        Me.btbuscar.Text = "Buscar"
-        Me.btbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btbuscar.UseVisualStyleBackColor = True
-        '
-        'LinkLabel6
-        '
-        Me.LinkLabel6.AutoSize = True
-        Me.LinkLabel6.Location = New System.Drawing.Point(4, 143)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(79, 15)
-        Me.LinkLabel6.TabIndex = 5
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "Por Provincia"
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Red
+        Me.Label14.Location = New System.Drawing.Point(574, 732)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(572, 22)
+        Me.Label14.TabIndex = 53
+        Me.Label14.Text = "Desarrollado para HOMDA por: Orlando Reynoso y Arcadio Solano"
+        Me.Label14.Visible = False
         '
         'Formulario
         '
@@ -1054,7 +1054,8 @@ Partial Class Formulario
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Formulario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Sistema de Gestión de Electores  -  Formulario de Inscripción"
+        Me.Text = "Sistema de Gestión de Electores  -  Formulario de Inscripción - TAXEROS CON LUIS " &
+    "2020"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dgvformulario, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1087,7 +1088,6 @@ Partial Class Formulario
     Friend WithEvents Label13 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label14 As Label
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
     Friend WithEvents LinkLabel5 As LinkLabel
@@ -1157,4 +1157,5 @@ Partial Class Formulario
     Friend WithEvents Label33 As Label
     Friend WithEvents cmbPartido As ComboBox
     Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents Label14 As Label
 End Class

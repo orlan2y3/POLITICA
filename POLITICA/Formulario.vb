@@ -191,34 +191,34 @@ Public Class Formulario
                 MsgBox("Nombre es Obligatorio", MsgBoxStyle.Information)
                 Return
             End If
-            If cmbcargo.Text = "" Then
-                MsgBox("Debe seleccionar el cargo", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbvehiculo.Text = "" Then
-                MsgBox("Debe seleccionar si tiene o no tiene vehiculo", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbProvincia.Text = "" Then
-                MsgBox("Debe seleccionar la provincia", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbMunicipio.Text = "" Then
-                MsgBox("Debe seleccionar el municipio", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbDistrito.Text = "" Then
-                MsgBox("Debe seleccionar el distrito municipal", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbestado.Text = "" Then
-                MsgBox("Debe seleccionar el estado", MsgBoxStyle.Information)
-                Return
-            End If
-            If cmbPartido.Text = "" Then
-                MsgBox("Debe seleccionar por que partido votó en el 2016", MsgBoxStyle.Information)
-                Return
-            End If
+            'If cmbcargo.Text = "" Then
+            '    MsgBox("Debe seleccionar el cargo", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbvehiculo.Text = "" Then
+            '    MsgBox("Debe seleccionar si tiene o no tiene vehiculo", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbProvincia.Text = "" Then
+            '    MsgBox("Debe seleccionar la provincia", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbMunicipio.Text = "" Then
+            '    MsgBox("Debe seleccionar el municipio", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbDistrito.Text = "" Then
+            '    MsgBox("Debe seleccionar el distrito municipal", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbestado.Text = "" Then
+            '    MsgBox("Debe seleccionar el estado", MsgBoxStyle.Information)
+            '    Return
+            'End If
+            'If cmbPartido.Text = "" Then
+            '    MsgBox("Debe seleccionar por que partido votó en el 2016", MsgBoxStyle.Information)
+            '    Return
+            'End If
 
             If IsNumeric(txtcodigo.Text) Then
 
