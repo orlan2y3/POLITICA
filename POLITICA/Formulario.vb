@@ -3,7 +3,7 @@ Public Class Formulario
     Public ds As DataSet = New DataSet
     Dim StrSql As String = ""
 
-    'DESARROLLADO POR ORLANDO REYNOSO Y ARCADIO SOLANO PARA HOMDA, ACTUALIZADO AL 2019
+    'DESARROLLADO POR ORLANDO REYNOSO Y ARCADIO SOLANO 2020
 
     Sub LlenaMovimientos()
         Try
@@ -798,5 +798,9 @@ Public Class Formulario
         End Try
     End Sub
 
-    'DESARROLLADO POR ORLANDO REYNOSO Y ARCADIO SOLANO PARA HOMDA, ACTUALIZADO AL 2019
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+
+    End Sub
+
+    'DESARROLLADO POR ORLANDO REYNOSO Y ARCADIO SOLANO 2020
 End Class

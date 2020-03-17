@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class Conexion
-    Public CadenaConnection As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\homda.mdb" _
+    Public CadenaConnection As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\politico.mdb" _
     & ";Jet OLEDB:Database Password='';"
 
     Public Cnn As OleDbConnection = New OleDbConnection(CadenaConnection)

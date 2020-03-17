@@ -1008,11 +1008,13 @@ Partial Class Formulario
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Red
-        Me.Label14.Location = New System.Drawing.Point(574, 732)
+        Me.Label14.Location = New System.Drawing.Point(296, 643)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(572, 22)
+        Me.Label14.Size = New System.Drawing.Size(712, 66)
         Me.Label14.TabIndex = 53
-        Me.Label14.Text = "Desarrollado para HOMDA por: Orlando Reynoso y Arcadio Solano"
+        Me.Label14.Text = "Desarrollado por:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Orlando Reynoso. Correo: OrlandoReynoso1983@gmail.com, Cel: (8" &
+    "29) 307-8247" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Arcadio Solano. Correo: ArcadioSolano@gmail.com, Cel: (809) 697-00" &
+    "08"
         Me.Label14.Visible = False
         '
         'Formulario
