@@ -386,7 +386,7 @@ Public Class Formulario
 
     End Sub
 
-    Private Sub btbuscar_Click(sender As Object, e As EventArgs) Handles btbuscar.Click
+    Private Sub btbuscar_Click(sender As Object, e As EventArgs)
         Try
             If rdbnombre.Checked = True And IsNumeric(txtbuscar.Text) Then
                 MsgBox("Debe digitar un nombre valido", MsgBoxStyle.Information)
@@ -547,7 +547,7 @@ Public Class Formulario
         End If
     End Sub
 
-    Private Sub cmbProvincia_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbProvincia.SelectedValueChanged
+    Private Sub cmbProvincia_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbIdProvincia.SelectedIndex = cmbProvincia.SelectedIndex
 
         LlenaMunicipios(cmbIdProvincia.Text)
@@ -560,14 +560,14 @@ Public Class Formulario
         cmbIdMovimiento.SelectedIndex = cmbMovimiento.SelectedIndex
     End Sub
 
-    Private Sub cmbMunicipio_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbMunicipio.SelectedValueChanged
+    Private Sub cmbMunicipio_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbIdMunicipio.SelectedIndex = cmbMunicipio.SelectedIndex
 
         LlenaDistritos(cmbIdProvincia.Text, cmbIdMunicipio.Text)
 
     End Sub
 
-    Private Sub cmbDistrito_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbDistrito.SelectedValueChanged
+    Private Sub cmbDistrito_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbIdDistrito.SelectedIndex = cmbDistrito.SelectedIndex
     End Sub
 
@@ -575,7 +575,7 @@ Public Class Formulario
         cmbMovimiento.SelectedIndex = cmbIdMovimiento.SelectedIndex
     End Sub
 
-    Private Sub cmbIdProvincia_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbIdProvincia.SelectedValueChanged
+    Private Sub cmbIdProvincia_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbProvincia.SelectedIndex = cmbIdProvincia.SelectedIndex
 
         LlenaMunicipios(cmbIdProvincia.Text)
@@ -584,13 +584,13 @@ Public Class Formulario
 
     End Sub
 
-    Private Sub cmbIdMunicipio_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbIdMunicipio.SelectedValueChanged
+    Private Sub cmbIdMunicipio_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbMunicipio.SelectedIndex = cmbIdMunicipio.SelectedIndex
 
         LlenaDistritos(cmbIdProvincia.Text, cmbIdMunicipio.Text)
     End Sub
 
-    Private Sub cmbIdDistrito_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbIdDistrito.SelectedValueChanged
+    Private Sub cmbIdDistrito_SelectedValueChanged(sender As Object, e As EventArgs)
         cmbDistrito.SelectedIndex = cmbIdDistrito.SelectedIndex
     End Sub
 
@@ -677,121 +677,121 @@ Public Class Formulario
         txtnombre.Focus()
     End Sub
 
-    Private Sub txtnombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnombre.KeyPress
+    Private Sub txtnombre_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub mtbcedula_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mtbcedula.KeyPress
+    Private Sub mtbcedula_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbcargo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbcargo.KeyPress
+    Private Sub cmbcargo_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub mtbtelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mtbtelefono.KeyPress
+    Private Sub mtbtelefono_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub mtbcelular_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mtbcelular.KeyPress
+    Private Sub mtbcelular_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbvehiculo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbvehiculo.KeyPress
+    Private Sub cmbvehiculo_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtcorreo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtcorreo.KeyPress
+    Private Sub txtcorreo_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtfacebook_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtfacebook.KeyPress
+    Private Sub txtfacebook_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txttwitter_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txttwitter.KeyPress
+    Private Sub txttwitter_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtinstagram_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtinstagram.KeyPress
+    Private Sub txtinstagram_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbProvincia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbProvincia.KeyPress
+    Private Sub cmbProvincia_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbMunicipio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbMunicipio.KeyPress
+    Private Sub cmbMunicipio_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbDistrito_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbDistrito.KeyPress
+    Private Sub cmbDistrito_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtCircuncripcion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCircuncripcion.KeyPress
+    Private Sub txtCircuncripcion_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtColegio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtColegio.KeyPress
+    Private Sub txtColegio_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtCodRecinto_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCodRecinto.KeyPress
+    Private Sub txtCodRecinto_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtRecinto_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtRecinto.KeyPress
+    Private Sub txtRecinto_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtDirRecinto_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDirRecinto.KeyPress
+    Private Sub txtDirRecinto_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub txtSector_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSector.KeyPress
+    Private Sub txtSector_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
     End Sub
 
-    Private Sub cmbestado_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbestado.KeyPress
+    Private Sub cmbestado_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
@@ -819,7 +819,7 @@ Public Class Formulario
         End Try
     End Sub
 
-    Private Sub cmbPartido_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbPartido.KeyPress
+    Private Sub cmbPartido_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = ChrW(Keys.Enter) Then
             SendKeys.Send("{TAB}")
         End If
