@@ -45,7 +45,7 @@ Public Class Rpt_Sector
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "HOMDA.Rpt_Sector.rpt"
+            Return "POLITICA.Rpt_Sector.rpt"
         End Get
         Set
             'Do nothing

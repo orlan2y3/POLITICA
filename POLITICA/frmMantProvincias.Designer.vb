@@ -124,7 +124,7 @@ Partial Class frmMantProvincias
         '
         'btnSalir
         '
-        Me.btnSalir.Image = Global.HOMDA.My.Resources.Resources.Salir1
+        Me.btnSalir.Image = Global.POLITICA.My.Resources.Resources.Salir1
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSalir.Location = New System.Drawing.Point(147, 442)
         Me.btnSalir.Name = "btnSalir"
@@ -136,7 +136,7 @@ Partial Class frmMantProvincias
         '
         'btnNuevo
         '
-        Me.btnNuevo.Image = Global.HOMDA.My.Resources.Resources.New1
+        Me.btnNuevo.Image = Global.POLITICA.My.Resources.Resources.New1
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNuevo.Location = New System.Drawing.Point(141, 13)
         Me.btnNuevo.Name = "btnNuevo"
@@ -150,7 +150,7 @@ Partial Class frmMantProvincias
         'btnEliminar
         '
         Me.btnEliminar.Enabled = False
-        Me.btnEliminar.Image = Global.HOMDA.My.Resources.Resources.Delete
+        Me.btnEliminar.Image = Global.POLITICA.My.Resources.Resources.Delete
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEliminar.Location = New System.Drawing.Point(252, 13)
         Me.btnEliminar.Name = "btnEliminar"
@@ -162,7 +162,7 @@ Partial Class frmMantProvincias
         '
         'btnGrabar
         '
-        Me.btnGrabar.Image = Global.HOMDA.My.Resources.Resources.save
+        Me.btnGrabar.Image = Global.POLITICA.My.Resources.Resources.save
         Me.btnGrabar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnGrabar.Location = New System.Drawing.Point(18, 13)
         Me.btnGrabar.Name = "btnGrabar"

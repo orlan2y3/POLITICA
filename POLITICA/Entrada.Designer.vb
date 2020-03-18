@@ -85,7 +85,7 @@ Partial Class Entrada
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.HOMDA.My.Resources.Resources.images_entrada
+        Me.PictureBox1.Image = Global.POLITICA.My.Resources.Resources.images_entrada
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(332, 252)

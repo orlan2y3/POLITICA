@@ -45,7 +45,7 @@ Public Class Rpt_Coordinadores
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "HOMDA.Rpt_Coordinadores.rpt"
+            Return "POLITICA.Rpt_Coordinadores.rpt"
         End Get
         Set
             'Do nothing
