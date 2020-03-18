@@ -98,6 +98,7 @@ Partial Class Reporte_Provincias
         Me.Controls.Add(Me.btsalir)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Reporte_Provincias"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
